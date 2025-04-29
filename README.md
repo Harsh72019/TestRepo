@@ -1,5 +1,4 @@
-# 🚀 My Backend API Server
-
+# 🚀 Backend Api server for Idea Usher as required
 A performant Node.js + Express backend API with MongoDB and Redis integration. It supports dynamic filtering, caching, validation, and follows a modular folder structure.
 
 ---
