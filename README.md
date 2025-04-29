@@ -86,6 +86,11 @@ npm run dev
 
 The server will start on the configured port (default: `3001`).
 
+Link for local : `http://localhost:3001/`
+
+Have also deployed the backend live on render ,database mongoDB atlas and redis on redis-lab - `https://testrepo-0a6g.onrender.com` 
+NOTE - My live version is free tier so the responses might be delayed
+
 You can acccess the swagger dcoumentation on `http://localhost:3001/api-docs`
 
 ---
