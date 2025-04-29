@@ -71,7 +71,6 @@ class PostRepository {
     ]);
 
     const totalCount = await Post.countDocuments(matchStage);
-
     return {
       data : posts,
       totalCount,

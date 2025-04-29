@@ -8,11 +8,14 @@ class PostService {
   constructor() {
     this.postRepo = new PostRepository();
   }
-
   async createPost(data) {
     const post = await this.postRepo.create(data);
-    // Invalidate cache after new post
-    await redisClient.del('posts_cache');
+    
+    const keys = await redisClient.keys('posts:*');
+    if (keys.length > 0) {
+      await redisClient.del(keys);
+    }
+    
     return post;
   }
 

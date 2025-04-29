@@ -4,13 +4,13 @@
 class ApiResponse {
     constructor(statusCode, data, message = 'Success') {
       this.status = true;
-      this.data = data.data ? data.data : data;
+      this.data =data && data.data ? data.data : data;
       this.message = message;
-      if(this.currentCount)
+      if(data.currentCount)
       {
         this.currentCount = data.currentCount ? data.currentCount : null;
       }
-      if(this.totalCount)
+      if(data.totalCount)
       {
         this.totalCount = data.totalCount ? data.totalCount : null;
       }
