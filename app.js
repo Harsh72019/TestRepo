@@ -27,10 +27,14 @@ app.use(fileUpload({
     tempFileDir: '/tmp/',
 }));
 
+app.use("/" , (req , res) => {
+    res.send(`Task for Idea Usher`)
+});
 // Routes
 app.use('/api/v1', mainRouter);
 
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerSpec));
+
 
 // Error handler
 app.use(errorHandler);
