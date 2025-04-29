@@ -28,7 +28,7 @@ git clone https://github.com/your-username/your-repo-name.git
 cd your-repo-name
 ```
 
-Or [download the ZIP](https://github.com/your-username/your-repo-name/archive/refs/heads/main.zip) and extract it.
+Or [download the ZIP](https://github.com/Harsh72019/TestRepo/archive/refs/heads/main.zip) and extract it.
 
 ---
 
