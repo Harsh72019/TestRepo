@@ -24,8 +24,8 @@ Make sure the following are installed on your machine:
 ### ⬇️ Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/your-repo-name.git
-cd your-repo-name
+git clone https://github.com/Harsh72019/TestRepo.git
+cd TestRepo
 ```
 
 Or [download the ZIP](https://github.com/Harsh72019/TestRepo/archive/refs/heads/main.zip) and extract it.
