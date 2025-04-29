@@ -1,0 +1,166 @@
+{
+	"info": {
+		"_postman_id": "e9d9cc28-2b6c-46dd-910c-caa9720e18a3",
+		"name": "Node Posts API",
+		"description": "A Postman collection for Posts and Tags API with MongoDB, Redis, and Cloudinary.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26565589"
+	},
+	"item": [
+		{
+			"name": "Create Tag",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"name\": \"Tech\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3001/api/v1/tags",
+					"protocol": "https",
+					"host": [
+						"testrepo-0a6g",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"tags"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Tags",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3001/api/v1/tags",
+					"protocol": "https",
+					"host": [
+						"testrepo-0a6g",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"tags"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Post",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "title",
+							"value": "This is the initial test post on live server",
+							"type": "text"
+						},
+						{
+							"key": "desc",
+							"value": "Hoping best nothing goes wrong",
+							"type": "text"
+						},
+						{
+							"key": "tags",
+							"value": "6810ef330078c7422430e42f",
+							"type": "text"
+						},
+						{
+							"key": "image",
+							"type": "file",
+							"src": "/C:/Users/harsh/OneDrive/Pictures/God of War/ScreenShot-2023-8-9_20-1-47.png"
+						},
+						{
+							"key": "tag",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3001/api/v1/posts",
+					"protocol": "https",
+					"host": [
+						"testrepo-0a6g",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Posts (with filters)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3001/api/v1/posts?sortBy=createdAt&order=desc&page=1&limit=10&tag=Tech",
+					"protocol": "https",
+					"host": [
+						"testrepo-0a6g",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"posts"
+					],
+					"query": [
+						{
+							"key": "keyword",
+							"value": "first",
+							"disabled": true
+						},
+						{
+							"key": "sortBy",
+							"value": "createdAt"
+						},
+						{
+							"key": "order",
+							"value": "desc"
+						},
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "limit",
+							"value": "10"
+						},
+						{
+							"key": "tag",
+							"value": "Tech"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
